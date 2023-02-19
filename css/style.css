@@ -512,7 +512,7 @@ button {
 .sect-footer {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    justify-content: space-between;
 }
 
 .container-link {
@@ -802,7 +802,7 @@ button {
     background-color: var(--backgrnd-modal);
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 3px 0px 1px rgba(0, 0, 0, 0.12), 1px0px,
         1px rgba(0, 0, 0, 0.14);
-    padding: 0 24px;
+    padding: 72px 24px;
 }
 
 .modal-btn {
@@ -842,7 +842,7 @@ button {
     line-height: calc(24 /16);
     letter-spacing: 0.02em;
     color: var(--color-navy-blue-modal);
-    padding: 72px 0 0;
+
     margin-bottom: 16px;
 }
 
@@ -937,15 +937,19 @@ button {
 .fake-check {
     margin-right: 8px;
     transition: var(--transition-duration-and-funk);
+
 }
 
 .icon-checkbox {
+    display: block;
     border-radius: 2px;
     outline: 1.25px solid var(--color-navy-blue-modal);
+    background-color: #ffffff;
 }
 
 .check-icon {
     opacity: 0;
+
 }
 
 .modal-form-check:checked+.fake-check>.check-icon {
@@ -954,6 +958,10 @@ button {
 
 .modal-form-check:focus+.fake-check>.check-icon {
     outline: 1.25px solid var(--btn-backgnd-cl);
+}
+
+.modal-form-link {
+    color: var(--color-iris);
 }
 
 .modal-form-submit {
